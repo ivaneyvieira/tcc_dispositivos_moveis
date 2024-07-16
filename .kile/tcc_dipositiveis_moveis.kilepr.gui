@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
-lastDocument=TCC_Ivaney_Vieira_de_Sales.tex
+lastDocument=includes/3-resultados.tex
 
 [item:TCC_Ivaney_Vieira_de_Sales.tex]
 open=true
@@ -13,6 +13,30 @@ open=false
 order=-1
 
 [item:caption2.sty]
+open=false
+order=-1
+
+[item:includes/0-abstract.tex]
+open=true
+order=1
+
+[item:includes/0-resumo.tex]
+open=false
+order=-1
+
+[item:includes/1-introducao.tex]
+open=false
+order=-1
+
+[item:includes/2-metodologia.tex]
+open=false
+order=-1
+
+[item:includes/3-resultados.tex]
+open=true
+order=2
+
+[item:includes/4-consideracoes.tex]
 open=false
 order=-1
 
@@ -57,11 +81,15 @@ open=false
 order=-1
 
 [view-settings,view=0,item:TCC_Ivaney_Vieira_de_Sales.tex]
-CursorColumn=44
-CursorLine=15
+CursorColumn=21
+CursorLine=8
 
 [view-settings,view=0,item:bibliografia.bib]
 CursorColumn=0
+CursorLine=25
+
+[view-settings,view=0,item:includes/3-resultados.tex]
+CursorColumn=143
 CursorLine=25
 
 [view-settings,view=0,item:includes/introducao.tex]
@@ -73,7 +101,3 @@ ScrollLine=2
 CursorColumn=0
 CursorLine=34
 ScrollLine=10
-
-[view-settings,view=0,item:includes/resultados.tex]
-CursorColumn=0
-CursorLine=36
