@@ -4,6 +4,11 @@
 \usepackage{graphicx,url}
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage[most]{tcolorbox}
+\usepackage{subfigure}
+\definecolor{block-gray}{gray}{0.85}
+
 %\usepackage[latin1]{inputenc}
 
 \sloppy
@@ -25,36 +30,37 @@ R. Álvaro Mendes, 94 -- Centro (Sul), Teresina -- PI, 64000-040
 
 \begin{resumo}
 
-  \input{includes/resumo.tex}
+  \input{includes/0-resumo.tex}
   
 \end{resumo}
 
 \begin{abstract}
 
-  \input{includes/abstract.tex}
+  \input{includes/0-abstract.tex}
 
 \end{abstract}
 
 \section{Introdução}
 
-\input{includes/introducao}
+\input{includes/1-introducao}
 
 \section{Metodologia}
 
-\input{includes/metodologia.tex}
+\input{includes/2-metodologia.tex}
 
 \section{Resultado e Discussão}
 
-\input{includes/resultados.tex}
+\input{includes/3-resultados.tex}
 
 \section{Considerações finais}
 
-\input{includes/consideracoes.tex}
+\input{includes/4-consideracoes.tex}
 
 % Referencia \cite{silva2022}.
 
 \bibliographystyle{sbc}
 \bibliography{bibliografia}
+
 
 \end{document}
 
