@@ -1,0 +1,222 @@
+   Desenvolvimento de um Aplicativo de Gestão de Inventário
+                para Otimização de Estoques em Depósitos
+                      Ivaney Vieira de Sales1 , Ricardo Martins Ramos2
+                1
+                  Instituto Federal de Educação, Ciência e Tecnologia do Piauı́
+        R. Álvaro Mendes, 94 – Centro (Sul) – 64.000-040 – Teresina – PI – Brasil
+                2
+                  Instituto Federal de Educação, Ciência e Tecnologia do Piauı́
+        R. Álvaro Mendes, 94 – Centro (Sul) – 64.000-040 – Teresina – PI – Brasil
+     Resumo. Este trabalho tem como objetivo desenvolver um aplicativo de gestão
+     de inventário para otimizar o controle e a organização de estoque em depósitos.
+     No cenário dinâmico do varejo brasileiro, os erros de estoque são um desafio
+     significativo, impactando a eficiência dos processos e a satisfação do cliente.
+     A implementação de inventários cı́clicos melhora a precisão e gestão dos esto-
+     ques, promovendo a eficiência operacional e a redução de custos. O aplicativo
+     proposto possui dois módulos: um para auditores, que permite a contagem de
+     produtos via dispositivos móveis, e outro para gerentes, oferecendo ferramentas
+     abrangentes para cadastro, gestão de lotes, auditoria e geração de relatórios.
+     Com integração a sistemas existentes, rastreamento de movimentação de pro-
+     dutos e suporte a leitura de códigos de barras, o aplicativo visa maximizar a
+     eficiência e transparência no gerenciamento de estoque. Treinamentos e su-
+     porte técnico contı́nuos garantem a adoção eficaz do sistema, destacando-se
+     como uma solução essencial para empresas de diversos setores.
+     Palavras-chave: Gestão de Inventário. Eficiência Operacional. Auditoria de
+     Estoque. Aplicativo Móvel.
+     Abstract. This work aims to develop an inventory management application to
+     optimize the control and organization of stock in warehouses. In the dynamic
+     scenario of Brazilian retail, stock errors are a significant challenge, impacting
+     process efficiency and customer satisfaction. Implementing cyclic inventories
+     improves stock accuracy and management, promoting operational efficiency and
+     cost reduction. The proposed application has two modules: one for auditors,
+     allowing product counting via mobile devices, and another for managers, offe-
+     ring comprehensive tools for product registration, batch management, auditing,
+     and report generation. With integration to existing systems, product movement
+     tracking, and support for barcodes reading, the application aims to maximize
+     efficiency and transparency in stock management. Training and continuous te-
+     chnical support ensure effective system adoption, standing out as an essential
+     solution for companies across various sectors.
+     Keywords: Inventory Management. Operational efficiency. Stock Audit. Mobile
+     Application.
+1. Introdução
+No varejo brasileiro, erros de estoque impactam negativamente a eficácia dos processos e
+a satisfação do cliente. O desafio reside na necessidade de manter um equilı́brio delicado
+entre a oferta e a demanda, garantindo que os produtos certos estejam disponı́veis no
+momento certo. Nesse contexto, a implementação de um processo de inventário assume
+um papel estratégico e indispensável.
+         Realizar inventários é crucial para garantir a precisão das informações de saldo
+de estoque. Erros no registro de transações e no manuseio fı́sico do estoque podem
+causar discrepâncias entre o estoque registrado e o real, que só são corrigidas durante
+verificações fı́sicas esporádicas. Na prática, diversas transações aumentam a possibilidade
+de erros, resultando em registros imprecisos de estoque. As causas comuns incluem erros
+de digitação, contagem incorreta de produtos, falhas em registrar corretamente produtos
+danificados ou destruı́dos, retirada e retorno de itens sem a devida correção nos registros,
+atrasos na atualização dos registros após transações e roubos de estoque, frequentes no
+varejo e também presentes em ambientes industriais e comerciais [Slack et al. 2018].
+         Segundo a pesquisa realizada por [Silva and Kloeckner 2022], a adoção de in-
+ventários cı́clicos representa uma prática estratégica que não apenas melhora a acurácia
+e a gestão dos estoques, mas também promove a eficiência operacional e a redução de
+custos, fortalecendo a competitividade da empresa no mercado.
+         Um aplicativo de gestão de inventário emerge como uma solução indispensável
+para o controle e a organização eficaz do estoque em depósitos. Projetado cuidadosa-
+mente para otimizar o gerenciamento de produtos, contagem fı́sica, auditoria e geração de
+relatórios, este aplicativo abrange diversas necessidades cruciais dos gerentes, auditores
+e equipes de controle de inventário. Estruturado em dois módulos distintos, o aplicativo
+para dispositivo móvel que proporciona funcionalidades especı́ficas para auditores faze-
+rem as contagem de produtos no depósito, enquanto outro atende às demandas do gerente
+de inventário.
+         O módulo destinado aos auditores é implementado em dispositivos móveis, como
+coletores de dados, facilitando a execução da contagem fı́sica dos produtos nos diversos
+lotes do depósito. Por meio de uma interface intuitiva, os auditores podem realizar suas
+atividades de forma eficiente, assegurando a precisão das informações coletadas.
+         No âmbito do sistema de gerenciamento, acessı́vel mediante um computador, o
+gerente do inventário encontra ferramentas abrangentes para cada etapa do ciclo de vida
+do produto. Desde o cadastro detalhado de produtos até o gerenciamento eficaz de lotes,
+auditoria e a geração de relatórios customizados, todas as operações são simplificadas
+para promover uma administração ágil e informada.
+         Para maximizar a utilidade do aplicativo, é crucial considerar a integração fluida
+com sistemas existentes na empresa, garantindo uma operação conjunta e eficiente. Além
+disso, caracterı́sticas como rastreamento de movimentação de produtos, alerta automati-
+zados, segurança robusta, histórico detalhado de alterações e suporte a tecnologias inova-
+doras, como leitura de códigos de barras, são incorporadas para aprimorar ainda mais a
+eficácia do sistema.
+         Relatórios personalizáveis oferecem uma visão detalhada e adaptada às neces-
+sidades especı́ficas da empresa, permitindo que as informações mais relevantes sejam
+destacadas e analisadas de maneira eficiente. Além disso, atualizações em tempo real,
+e acessibilidade móvel garantem que os dados estejam sempre atualizados e possam ser
+acessados de qualquer lugar, a qualquer momento, proporcionando uma tomada de de-
+cisão mais ágil e informada.
+2. Metodologia
+2.1. Abordagem de desenvolvimento
+Pode ser simplificado para “Os métodos ágeis corrigem deficiências da engenharia de
+software tradicional. Embora ofereçam benefı́cios significativos, não são universais e não
+contradizem completamente as práticas confiáveis de engenharia de software. Eles podem
+ser aplicados como uma abordagem geral para todos os tipos de projetos de software
+[Pressman and Maxim 2021].
+         Na economia atual, é frequentemente difı́cil prever o desenvolvimento de sistemas
+computacionais, como aplicativos móveis. Mudanças rápidas ocorrem no mercado, as
+demandas dos consumidores são alteradas, e novas ameaças competitivas surgem sem
+aviso. Muitas vezes, é impraticável estabelecer completamente os requisitos antes do
+inı́cio do projeto. É crucial ter agilidade o bastante para se adaptar a um ambiente de
+negócios dinâmico [Pressman and Maxim 2021].
+         O Kanban é uma metodologia ágil amplamente adotada devido à sua capacidade
+de visualizar e gerenciar eficientemente fluxos de trabalho. Ele proporciona transparência
+sobre o progresso das tarefas e limita o trabalho em progresso, permitindo que a equipe
+se concentre em concluir tarefas antes de iniciar novas. Com colunas como “Para Fa-
+zer”, “Em Progresso” e “Concluı́do”, o Kanban facilita a priorização contı́nua baseada
+nas necessidades atuais do projeto e permite ajustes rápidos conforme novos requisitos
+emergem ou mudam. Essa flexibilidade é crucial em um ambiente onde as demandas do
+mercado e dos usuários podem evoluir rapidamente, garantindo que o desenvolvimento
+seja adaptável e responsivo às necessidades reais.
+         Essa integração do Kanban com os princı́pios ágeis fortalece a capacidade do de-
+senvolvimento de software de responder de maneira ágil e eficaz às mudanças, mantendo
+ao mesmo tempo, um controle rigoroso sobre o progresso e a qualidade do produto final.
+2.2. Ferramentas e tecnologias
+O levantamento de requisitos foi feito por meio de entrevista com os usuários chaves do
+setor de estoque e inventário da empresa, onde foram identificadas as necessidades e fun-
+cionalidades essenciais para o aplicativo. A partir dessas informações, foi elaborado um
+documento de especificação de requisitos, que serviu como base para o desenvolvimento
+do aplicativo.
+         Além das entrevistas, foi realizada uma análise comparativa detalhada dos princi-
+pais aplicativos de contagem de inventários disponı́veis na loja de aplicativos do Google:
+IS Collector, KCollector e o Stock e Inventário Simples. A análise abrangeu funcionali-
+dades, vantagens e desvantagens de cada aplicativo.
+         No frontend, foi utilizado o Figma (https://www.figma.com) para criar
+protótipos de design e interfaces de usuário, permitindo uma visualização clara e intera-
+tiva do aplicativo antes do desenvolvimento real. O Figma é uma ferramenta de design
+colaborativa baseada na web, usada para criar interfaces de usuário, protótipos e gráficos
+vetoriais. Ele facilita a comunicação e a iteração entre designers e desenvolvedores em
+tempo real, garantindo que todos estivessem alinhados durante o processo de design.
+  (a) Tela de login.  (b) Tela princi-  (c) Seleção de   (d) Seleção de (e) Coleta para
+                      pal.              inventário.       lote.            contagem.
+                           Figura 1. Layout de telas para o aplicativo
+         Para o desenvolvimento da interface do aplicativo, foi usado o Flutter versão 3.22
+(https://flutter.dev), um kit de desenvolvimento de software criado pelo Go-
+ogle. O Flutter permitiu a construção de aplicativos nativos de alto desempenho para
+iOS, Android, web e desktop a partir de uma única base de código. Utilizando a lingua-
+gem Dart versão 3.4 (https://dart.dev), o Flutter é conhecido por sua capacidade
+de criar interfaces de usuário bonitas e interativas rapidamente, proporcionando uma ex-
+periência de usuário consistente e responsiva em múltiplas plataformas.
+         O Android Studio versão 2024.1.1 (https://developer.android.com/
+studio) foi utilizado para desenvolver, testar e depurar o aplicativo. O Android Studio
+oferece um conjunto completo de ferramentas para o desenvolvimento Flutter, incluindo
+um editor de código, ferramentas de depuração e um emulador integrado.
+         O backend inclui a API Rest Full, que faz a integração do Aplicativo com o
+ERP da organização. Ele foi implementado na linguagem Java versão 21 (https:
+//www.oracle.com/java/) com o framework Spring Boot versão 3.2 (https:
+//spring.io/projects/spring-boot). O IntelliJ IDEA versão 2024.1.4
+(https://www.jetbrains.com/idea/) foi utilizado como ambiente de desen-
+volvimento integrado (IDE) para escrever, depurar e testar o código backend. Além disso,
+O MySQL versão 8.3 (https://www.mysql.com) foi o sistema de gerenciamento de
+banco de dados escolhido para armazenar e recuperar dados de forma eficiente e segura.
+No entanto, a implementação detalhada do backend não é o foco principal deste trabalho.
+3. Resultado e Discussão
+3.1. Funcionalidades do aplicativo
+Antes da utilização dos coletores de dados pelos auditores para a contagem propriamente
+dita, é necessário que o administrador do sistema faça a configuração do inventário, que
+consiste em informar o nome do inventário, a data de inı́cio e fim, o depósito onde será
+realizado o inventário e os produtos que serão contados.
+         A figura 1 apresenta o layout das telas do aplicativo conforme descrito a seguir:
+       • Tela de login: temos a tela de login onde o usuário deve informar o usuário e
+         senha para acessar o aplicativo. Lembrando que o usuário é autenticado usando as
+         mesmas informações de acesso do ERP da empresa.
+      • Tela principal: mostra a tela principal do aplicativo, onde o usuário pode sele-
+         cionar o inventário que deseja realizar a contagem ou retomar uma contagem já
+         iniciada.
+      • Seleção de inventário: mostra a tela de seleção de inventário, onde o usuário pode
+         visualizar os inventários disponı́veis e selecionar o que deseja realizar a contagem.
+      • Seleção de lote: exibe a tela de seleção de lote, onde o usuário pode ver os lotes
+         disponı́veis e escolher qual deseja contar. Um lote é um conjunto de produtos
+         agrupados em um espaço fı́sico especı́fico, como, por exemplo, um palete, uma
+         gôndola ou uma estante, e é identificado por um código e um código de barras. O
+         auditor pode selecionar o lote lendo o código de barras.
+      • Coleta para contagem: mostra a tela de coleta para contagem, onde o usuário
+         pode ver os produtos disponı́veis no lote e registrar a quantidade contada de cada
+         item. Ao finalizar a contagem, o usuário pode enviar os dados para o sistema de
+         gestão da empresa. Nesse momento, a situação do lote é definida como fechado,
+         podendo ser reaberto apenas pelo administrador.
+         Durante a contagem o administrador fica acompanhando o progresso das conta-
+gem e também pode configurar alerta para serem enviados aos auditores, informando
+sobre a proximidade do fim do inventário ou atrasos na contagem.
+         Após a conclusão da contagem, o administrador fecha o inventário. Os dados são
+validados por meio de uma análise estatı́stica e, em seguida, processados para realizar
+ajustes gerenciais e fiscais do estoque.
+3.2. Aplicativos semelhantes
+A tabela 1 uma comparação entre os aplicativos IS Collector, KCollector e Stock e In-
+ventário Simples, que são aplicativos de contagem de inventário disponı́veis na loja de
+aplicativos do Google. A análise abrange suas principais funcionalidades.
+         O IS Collector se destaca pela flexibilidade e abrangência de funções, ideal para
+empresas que exigem um alto nı́vel de controle e automação no processo de inventário. O
+KCollector é a opção ideal para quem busca uma solução acessı́vel e prática, que trans-
+forma o celular em um coletor eficiente. Já o Stock e Inventário Simples se destaca pela
+facilidade de uso e pelo gerenciamento completo do estoque, sendo uma ótima opção para
+iniciantes e pequenos negócios.
+         O aplicativo do presente trabalho se destaca pela integração com o sistema de
+gestão da empresa, garantindo a consistência e a atualização em tempo real dos dados de
+estoque. Além disso, a interface intuitiva e as funcionalidades customizáveis proporcio-
+nam uma experiência de usuário eficiente e adaptável às necessidades especı́ficas de cada
+empresa. A integração com tecnologias avançadas, como leitura de códigos de barras e
+alertas automatizados, eleva a eficácia do aplicativo, tornando-o uma solução completa e
+moderna para o controle de inventário.
+4. Considerações finais
+Os erros de saldo de estoque no varejo brasileiro são um desafio significativo que afeta
+a eficiência operacional e a satisfação do cliente. Este trabalho propõe um processo de
+inventário robusto e contı́nuo, integrado à gestão operacional, como solução estratégica.
+                  Tabela 1. Funcionalidades dos aplicativos semelhantes.
+        A adoção de tecnologias avançadas, como sistemas automatizados de rastrea-
+mento e leitura por código de barras, pode aumentar a eficácia do processo, reduzindo
+o tempo para corrigir discrepâncias. Ferramentas como Flutter e Spring Boot demons-
+tram a viabilidade de criar sistemas eficientes para a gestão de inventários.
+        Entretanto, a tecnologia sozinha não resolve todos os problemas. É crucial ter
+processos bem definidos, treinamento adequado e uma cultura organizacional que valorize
+a precisão. Assim, ao adotar essas práticas, os varejistas não apenas minimizam os erros
+de saldo de estoque, mas também melhoram a gestão de estoque e a experiência de compra
+para os clientes.
+Referências
+Pressman, R. S. and Maxim, B. R. (2021). Engenharia de software: uma abordagem
+   profissional. AMGH, Porto Alegre, 9a edition.
+Silva, E. F. and Kloeckner, N. V. d. R. (2022). Método DMAIC aplicado ao controle
+   de estoques de telefonia e informática numa empresa de varejo. XXV SEMEAD (Se-
+   minários em Administração da Universidade de São Paulo).
+Slack, N., Brandon-Jones, A., and Johnston, R. (2018). Administração da produção.
+   Atlas, São Paulo, 8a edition.
