@@ -1,6 +1,6 @@
 \subsection{Funcionalidades do aplicativo}
 
-Antes da contagem física dos produtos pelos auditores munidos de coletores, cabe ao administrador do inventário realizar sua devida configuração. Essa etapa compreende o registro do nome do inventário, definição do período de sua realização (data de início e término), indicação do depósito onde ocorrerá a contagem e a listagem dos produtos a serem inventariados.
+Antes da realização da contagem física dos produtos pelos auditores, munidos de coletores, é responsabilidade do administrador do inventário efetuar a configuração adequada. O inventário deve ser registrado com as seguintes informações: nome, período de realização (data de início e término), identificação do depósito onde ocorrerá a contagem e seleção dos produtos a serem inventariados. A seleção pode ser feita com base no departamento, fornecedor dos produtos ou por uma lista de produtos específicos.
 
 \begin{figure}[!htb]
     \centering
@@ -34,16 +34,16 @@ A figura \ref{fig:telas} apresenta o layout das telas do aplicativo conforme des
 
     \item \textbf{Tela Principal}: A tela principal apresenta ao usuário as opções para iniciar uma nova contagem de inventário ou retomar uma contagem já em andamento.
 
-    \item \textbf{Seleção de Inventário}: Nesta tela, o usuário visualiza a lista de inventários disponíveis para contagem e seleciona aquele que deseja realizar o procedimento.
+    \item \textbf{Seleção de Inventário}: Nesta tela, o usuário visualiza a lista de inventários disponíveis para contagem e seleciona aquele que deseja realizar. Após a seleção do inventário, a lista de produtos associada é carregada no coletor de dados, permitindo o uso offline caso o dispositivo perca a conexão.
 
     \item \textbf{Seleção de Lote}: A tela de seleção de lote apresenta ao usuário a lista de lotes disponíveis dentro do inventário escolhido. O usuário deve selecionar o lote que deseja contar. Um lote é definido como um conjunto de produtos agrupados em um espaço físico específico, como um palete, uma gôndola ou uma estante. Cada lote é identificado por um código e um código de barras. O auditor pode selecionar o lote desejado lendo o código de barras com o coletor.
 
-    \item \textbf{Coleta para Contagem}: Nesta tela, o usuário visualiza os produtos presentes no lote selecionado e registra a quantidade contada de cada item. Ao finalizar a contagem, os dados coletados são enviados ao sistema de gestão da empresa. Nesse momento, o status do lote é atualizado para “fechado”, podendo ser reaberto apenas pelo administrador do sistema.
+    \item \textbf{Coleta para Contagem}: Nesta tela, o usuário visualiza os produtos presentes no lote selecionado e registra a quantidade contada de cada item. Ao finalizar a contagem, os dados coletados são enviados ao sistema de gestão da empresa. Nesse momento, a situação do lote é atualizado para “fechado”, podendo ser reaberto apenas pelo administrador do sistema.
 \end{itemize}
 
-Durante a contagem, o administrador monitora o progresso das contagens por meio de um dashboard e pode configurar alertas para serem enviados aos auditores, informando sobre a proximidade do término do inventário ou eventuais atrasos na contagem.
+Durante a contagem, o administrador monitora o progresso das contagens por meio de um dashboard e pode configurar notificações para serem enviadas aos auditores, informando sobre a proximidade do término do inventário ou eventuais atrasos na contagem.
 
-Após a conclusão da contagem, o administrador fecha o inventário. Os dados são validados por meio de uma análise estatística e, em seguida, processados para realizar ajustes gerenciais e fiscais do estoque.
+Após a conclusão da contagem, o administrador finaliza o inventário. Os dados são validados por meio de uma análise estatística e, em seguida, processados para realizar os ajustes gerenciais e fiscais do estoque.
 
 \subsection{Aplicativos semelhantes}
 
